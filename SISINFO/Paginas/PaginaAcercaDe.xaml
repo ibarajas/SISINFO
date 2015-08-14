@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="SISINFO.Paginas.PaginaAcercaDe" BackgroundImage="fondo.png" Opacity="0.5">
+
+	<ContentPage.Content>
+		<ScrollView HorizontalOptions="Fill">
+			<StackLayout HorizontalOptions="Fill" VerticalOptions="StartAndExpand" Spacing="10">
+				<Label Style="{StaticResource LabelTitulo}" Text="Acerca De" />
+				<Label Style="{StaticResource LabelDefault}" Text="Envíanos tus sugerencias y opiniones, serán altamente valoradas y apreciadas. Ayúdanos a crear una aplicación que sea de gran utilidad para estudiantes y profesores."/>
+				<Label Style="{StaticResource LabelDefault}" Text="¿Eres parte de SISINFO y quieres ser parte del equipo de diseño y/o desarrollo? ¡Envíanos un correo!"/>
+				<Label Style="{StaticResource LabelDefaultNegrita}" Text="Equipo de desarrollo" />
+				<Label Style="{StaticResource LabelPeque}" Text="ISC Luis Antonio Beltrán Prieto (luis.beltran@itcelaya.edu.mx)" />
+				<StackLayout>
+					<Label Style="{StaticResource LabelDefaultNegrita}" Text="Versión actual: 0.0.1" />
+					<Label Style="{StaticResource LabelPequeNegrita}" Text="**** Versiones anteriores ****" />
+					<Label Style="{StaticResource LabelPequeNegrita}" Text="Versión 0.0.1 (2015-08-13)"/>
+					<Label Style="{StaticResource LabelPeque}" Text="- Se agregó lista de profesores." />
+					<Label Style="{StaticResource LabelPeque}" Text="- Se pueden enviar correos electrónicos." />
+					<Label Style="{StaticResource LabelPeque}" Text="- Se puede filtrar la lista de profesores." />
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="btnCorreo" Clicked="btnCorreo_Clicked" Order="Primary" Text="Enviar correo" Priority="0" Icon="mail.png"/>
+	</ContentPage.ToolbarItems>
+</ContentPage>

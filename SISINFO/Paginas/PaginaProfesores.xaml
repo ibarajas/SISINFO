@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="SISINFO.Paginas.PaginaProfesores" BackgroundImage="fondo.png">
+	<ContentPage.Content>
+		<StackLayout Spacing="20" Padding="5">
+			<Label Style="{StaticResource LabelTitulo}" Text="Lista de Profesores" />
+			<Entry x:Name="txtProfesores" TextChanged="txtProfesores_TextChanged" Placeholder="Escribe el nombre del profesor" BackgroundColor="White" TextColor="Black"/>
+			<BoxView Color="Black" HeightRequest="2"/>
+			<ListView x:Name="lstProfesores" RowHeight="55" BackgroundColor="White">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Spacing="2" Padding="5">
+								<Label Text="{Binding Nombre}" FontSize="20" TextColor="Black" />
+								<Label Text="{Binding Email}" FontSize="16" TextColor="#FFA500" />
+								<BoxView Color="Green" HeightRequest="2"/>
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="btnCorreo" Clicked="btnCorreo_Clicked" Order="Primary" Text="Enviar correo" Priority="0" Icon="mail.png"/>
+	</ContentPage.ToolbarItems>
+</ContentPage>

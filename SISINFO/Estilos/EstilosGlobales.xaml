@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="SISINFO.Estilos.EstilosGlobales">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="Labels" TargetType="Label">
+				<Setter Property="TextColor" Value="Black"/>
+				<Setter Property="XAlign" Value="Start"/>
+				<Setter Property="LineBreakMode" Value="WordWrap"/>
+			</Style>
+
+			<Style x:Key="LabelTitulo" TargetType="Label" BasedOn="{StaticResource Labels}">
+				<Setter Property="FontSize" Value="Large"/>
+				<Setter Property="FontAttributes" Value="Bold"/>
+			</Style>
+
+			<Style x:Key="LabelDefault" TargetType="Label" BasedOn="{StaticResource Labels}">
+				<Setter Property="FontSize" Value="Medium"/>
+			</Style>
+
+			<Style x:Key="LabelDefaultNegrita" TargetType="Label" BasedOn="{StaticResource LabelDefault}">
+				<Setter Property="FontAttributes" Value="Bold"/>
+			</Style>
+
+			<Style x:Key="LabelPeque" TargetType="Label" BasedOn="{StaticResource Labels}">
+				<Setter Property="FontSize" Value="Small"/>
+				<Setter Property="XAlign" Value="Start"/>
+			</Style>
+
+			<Style x:Key="LabelPequeNegrita" TargetType="Label" BasedOn="{StaticResource LabelPeque}">
+				<Setter Property="FontAttributes" Value="Bold"/>
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+	</ContentPage.Content>
+</ContentPage>

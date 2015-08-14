@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="SISINFO.Paginas.PaginaInicio" BackgroundImage="fondo.png" Opacity="0.5">
+
+	<ContentPage.Content>
+		<ScrollView HorizontalOptions="Fill">
+			<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="20">
+				<Label Style="{StaticResource LabelTitulo}" Text="SISINFO app" />
+				<Label Style="{StaticResource LabelDefault}" Text="Esta app pretende integrar servicios que sean de utilidad a estudiantes de las carreras de las Ingenierías en Sistemas Computacionales e Informática y a los profesores del Departamento de Sistemas y Computación del Instituto Tecnológico de Celaya." />
+				<Label Style="{StaticResource LabelDefault}" Text="Revisa la sección Acerca De para conocer la evolución de este proyecto y cómo puedes contribuir a él." />
+				<Label Style="{StaticResource LabelDefaultNegrita}" Text="NOTA: Esta es una aplicación NO OFICIAL" XAlign="Center"/>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="btnProfesores" Clicked="btnProfesores_Clicked" Order="Primary" Text="Profesores" Priority="0" Icon="profesores.png"/>
+		<ToolbarItem x:Name="btnAcercaDe" Clicked="btnAcercaDe_Clicked" Order="Primary" Text="Acerca de" Priority="1" Icon="acercade.png"/>
+	</ContentPage.ToolbarItems>
+</ContentPage>
